@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-h-p">
+      <header class="header">
+      <h1 id="title">"New Coin" Airdrop Form</h1>
+      <p id="description">Hello and welcom!<br>Please fill out this form for getting airdrop</p>
+      </header>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Nickname <input type="text" id="name" placeholder="Enter your Nickname" required /></label>
+        <label id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label" >Age(optional) <input type="number" id="number" name="age" min="18" max="333" placeholder="Enter your Age" required /></label>
+      </fieldset>
+      <fieldset>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Lucky Hamster =3</option>
+            <option value="2">Shaved Hamster :C</option>
+            <option value="3">Student...</option>
+            <option value="4">Just an Earthling</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Would you hold our token?</p>
+        <label><input type="radio" name="holder" value="definitely" class="inline" checked /> Definitely</label>
+        <label><input type="radio" name="holder" value="maybe" class="inline" /> Maybe</label>
+        <label><input type="radio" name="holder" value="nope" class="inline" /> Nope</label>
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see in the future with our token?</p>
+        <label><input type="checkbox" name="future-for-token" class="inline" value="new-integrations" /> New integrations</label>
+        <label><input type="checkbox" name="future-for-token" class="inline" value="multichain" /> Multichain</label>
+        <label><input type="checkbox" name="future-for-token" class="inline" value="community-calls" /> Community calls</label>
+        <label><input type="checkbox" name="future-for-token" class="inline" value="more-listings" /> More listings</label>
+        <label><input type="checkbox" name="future-for-token" class="inline" value="airdrops-for-staking" /> Airdrops for staking</label>
+      </fieldset>
+      <fieldset>
+        <label>Any comments or suggestions?
+          <textarea name="com-sug" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <button type="submit" id="submit" class="submit-button">
+            Submit
+      </button>
+    </form>
+  </body>
+</html>
